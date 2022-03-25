@@ -13,7 +13,6 @@ import org.apache.log4j.PropertyConfigurator;
 
 import static co.com.sofka.question.jsonplaceholder.ResponseCode.responseCode;
 import static co.com.sofka.task.jsonplaceholder.PatchTitle.patchTitle;
-import static co.com.sofka.util.FileUtilities.updateTitleBodyConverter;
 import static co.com.sofka.util.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;

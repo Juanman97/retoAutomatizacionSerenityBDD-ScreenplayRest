@@ -1,6 +1,6 @@
 package co.com.sofka.stepdefinition.pokeapi;
 
-import co.com.sofka.question.pokeapi.GetGameVersionData;
+import co.com.sofka.question.pokeapi.GetGameVersionName;
 import co.com.sofka.stepdefinition.jsonplaceholder.GetPostTitleStepDefinition;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import static co.com.sofka.question.jsonplaceholder.ResponseCode.responseCode;
-import static co.com.sofka.task.pokeapi.GetPokemonData.getPokemonData;
+import static co.com.sofka.task.pokeapi.GetGameVersionData.getGameVersionData;
 import static co.com.sofka.util.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -34,14 +34,14 @@ public class PokemonGameVersionStepDefinition {
     @When("el usuario realiza la consulta para la version del juego con id {int}")
     public void elUsuarioRealizaLaConsultaParaLaVersionDelJuegoConId(Integer gameID) {
         actor.attemptsTo(
-                getPokemonData()
+                getGameVersionData()
                         .usingResource(String.format(RESOURCE, gameID))
         );
     }
 
     @Then("se visualizara que la version del juego es {string}")
     public void seVisualizaraQueLaVersionDelJuegoEs(String gameName) {
-        String responseGameName = new GetGameVersionData().answeredBy(actor).getName();
+        String responseGameName = new GetGameVersionName().answeredBy(actor).getName();
         actor.should(
                 seeThat("El código de respuesta es " + HttpStatus.SC_OK, responseCode(), equalTo(HttpStatus.SC_OK)),
                 seeThat("El nombre de la versión del juego debe ser " + gameName,

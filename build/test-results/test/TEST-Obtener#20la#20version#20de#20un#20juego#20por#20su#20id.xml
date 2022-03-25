@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Obtener la version de un juego por su id" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-25T16:33:29" hostname="JUANMAN-PC" time="0.38">
+  <properties/>
+  <testcase name="obtener la version de un juego" classname="Obtener la version de un juego por su id" time="0.38"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

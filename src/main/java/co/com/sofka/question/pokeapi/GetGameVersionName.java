@@ -5,7 +5,7 @@ import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-public class GetGameVersionData implements Question {
+public class GetGameVersionName implements Question {
     @Override
     public GameVersionModel answeredBy(Actor actor) {
         return SerenityRest.lastResponse().as(GameVersionModel.class);

@@ -4,10 +4,10 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Get;
 
-public class GetPokemonData implements Task {
+public class GetGameVersionData implements Task {
     private String resource;
 
-    public GetPokemonData usingResource(String resource) {
+    public GetGameVersionData usingResource(String resource) {
         this.resource = resource;
         return this;
     }
@@ -19,7 +19,7 @@ public class GetPokemonData implements Task {
         );
     }
 
-    public static GetPokemonData getPokemonData() {
-        return new GetPokemonData();
+    public static GetGameVersionData getGameVersionData() {
+        return new GetGameVersionData();
     }
 }

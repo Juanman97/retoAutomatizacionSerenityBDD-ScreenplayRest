@@ -8,18 +8,12 @@ import net.serenitybdd.screenplay.rest.interactions.Patch;
 
 public class PatchTitle implements Task {
     private String resource;
-    private String bodyRequest;
     private PatchTitleModel patchTitleModel;
 
     public PatchTitle usingResource(String resource) {
         this.resource = resource;
         return this;
     }
-
-//    public PatchTitle withBody(String bodyRequest) {
-//        this.bodyRequest = bodyRequest;
-//        return this;
-//    }
 
     public PatchTitle withBody(PatchTitleModel patchTitleModel) {
         this.patchTitleModel = patchTitleModel;

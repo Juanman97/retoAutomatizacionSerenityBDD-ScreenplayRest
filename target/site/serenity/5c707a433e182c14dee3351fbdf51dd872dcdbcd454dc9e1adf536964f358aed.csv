@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Obtener la version de un juego por su id","obtener la version de un juego","SUCCESS","2022-03-25T10:31:16.755-05:00[America/Bogota]","0.0","0.44"
+"Obtener los datos de una ubicación de los juegos de pokemon","obtener el nombre de una ubicacion dentro del juego","SUCCESS","2022-03-25T17:10:04.606-05:00[America/Bogota]","0.0","0.41"

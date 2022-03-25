@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Crear usuarios" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-25T22:10:05" hostname="JUANMAN-PC" time="0.777">
+  <properties/>
+  <testcase name="Crear un usuario" classname="Crear usuarios" time="0.777"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

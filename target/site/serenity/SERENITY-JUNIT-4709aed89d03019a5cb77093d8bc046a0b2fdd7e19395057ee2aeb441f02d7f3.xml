@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Modificar un post" skipped="0" tests="2" time="4.23" timestamp="2022-03-25 02:54:45"><testcase name="Actualizar el titulo de un post"/><testcase name="Eliminar el post"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Modificar un post" skipped="0" tests="2" time="4.2" timestamp="2022-03-25 05:09:59"><testcase name="Actualizar el titulo de un post"/><testcase name="Eliminar el post"/></testsuite>

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Modificar un post" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-03-25T19:54:45" hostname="JUANMAN-PC" time="4.395">
+<testsuite name="Modificar un post" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-03-25T22:09:59" hostname="JUANMAN-PC" time="4.396">
   <properties/>
-  <testcase name="Actualizar el titulo de un post" classname="Modificar un post" time="3.928"/>
-  <testcase name="Eliminar el post" classname="Modificar un post" time="0.467"/>
-  <system-out><![CDATA[{
-    
-}
-]]></system-out>
+  <testcase name="Actualizar el titulo de un post" classname="Modificar un post" time="3.975"/>
+  <testcase name="Eliminar el post" classname="Modificar un post" time="0.421"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

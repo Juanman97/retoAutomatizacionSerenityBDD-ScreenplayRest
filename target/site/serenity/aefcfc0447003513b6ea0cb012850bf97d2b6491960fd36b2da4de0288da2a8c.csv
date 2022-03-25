@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Obtener un post por su id","obtener la informacion de un post por su id","SUCCESS","2022-03-25T10:31:11.35-05:00[America/Bogota]","0.0","3.8"
-"Actualizar el titulo de un post","Modificar el titulo de un post","SUCCESS","2022-03-25T10:31:16.036-05:00[America/Bogota]","0.0","0.69"
+"Modificar un post","Actualizar el titulo de un post","SUCCESS","2022-03-25T17:09:59.248-05:00[America/Bogota]","0.0","3.8"
+"Modificar un post","Eliminar el post","SUCCESS","2022-03-25T17:10:03.059-05:00[America/Bogota]","0.0","0.41"

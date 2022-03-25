@@ -7,12 +7,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
-import net.serenitybdd.screenplay.rest.questions.LastResponse;
 import org.apache.http.HttpStatus;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import static co.com.sofka.question.jsonplaceholder.ResponseCode.responseCode;
+import static co.com.sofka.question.ResponseCode.responseCode;
 import static co.com.sofka.task.jsonplaceholder.DeletePost.deletePost;
 import static co.com.sofka.task.jsonplaceholder.PatchTitle.patchTitle;
 import static co.com.sofka.util.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;

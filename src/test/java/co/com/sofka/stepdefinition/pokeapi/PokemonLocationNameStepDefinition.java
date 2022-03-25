@@ -10,7 +10,7 @@ import org.apache.http.HttpStatus;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import static co.com.sofka.question.jsonplaceholder.ResponseCode.responseCode;
+import static co.com.sofka.question.ResponseCode.responseCode;
 import static co.com.sofka.task.pokeapi.GetIngameLocationData.getIngameLocationData;
 import static co.com.sofka.util.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;

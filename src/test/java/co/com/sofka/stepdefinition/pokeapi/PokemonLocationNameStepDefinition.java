@@ -1,7 +1,6 @@
 package co.com.sofka.stepdefinition.pokeapi;
 
 import co.com.sofka.question.pokeapi.GetIngameLocationName;
-import co.com.sofka.stepdefinition.jsonplaceholder.GetPostTitleStepDefinition;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,7 +17,7 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class PokemonLocationNameStepDefinition {
-    private static final Logger LOGGER = Logger.getLogger(GetPostTitleStepDefinition.class);
+    private static final Logger LOGGER = Logger.getLogger(PokemonLocationNameStepDefinition.class);
 
     private static final String URL_BASE = "https://pokeapi.co/api/";
     private static final String RESOURCE = "v2/location/%s/";

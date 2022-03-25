@@ -5,8 +5,6 @@
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 c
 3src/main/java/co/com/sofka/util/UpdateTitleKey.java,a\d\ada44a0369eefe145f7a4148b193f7e0f5ceb20d
-t
-Dsrc/main/java/co/com/sofka/question/jsonplaceholder/GetPostData.java,8\5\85383d4569587f5defe1d3a035ec554ad741e0f5
 s
 Csrc/main/java/co/com/sofka/question/pokeapi/GetGameVersionData.java,7\d\7d41e97329b35ac7d08673328e98a400d08a40e4
 v

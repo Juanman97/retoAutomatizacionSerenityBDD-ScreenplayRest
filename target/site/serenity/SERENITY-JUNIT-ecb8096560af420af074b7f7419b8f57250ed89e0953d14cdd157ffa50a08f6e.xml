@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Obtener los datos de una ubicación de los juegos de pokemon" skipped="0" tests="1" time="0.23" timestamp="2022-03-25 11:33:30"><testcase name="obtener el nombre de una ubicacion dentro del juego"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Obtener los datos de una ubicación de los juegos de pokemon" skipped="0" tests="1" time="0.41" timestamp="2022-03-25 02:54:50"><testcase name="obtener el nombre de una ubicacion dentro del juego"/></testsuite>

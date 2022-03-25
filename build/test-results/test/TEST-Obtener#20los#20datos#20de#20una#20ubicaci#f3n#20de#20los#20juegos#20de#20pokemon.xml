@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Obtener los datos de una ubicación de los juegos de pokemon" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-25T16:33:30" hostname="JUANMAN-PC" time="0.246">
+<testsuite name="Obtener los datos de una ubicación de los juegos de pokemon" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-25T19:54:50" hostname="JUANMAN-PC" time="0.409">
   <properties/>
-  <testcase name="obtener el nombre de una ubicacion dentro del juego" classname="Obtener los datos de una ubicación de los juegos de pokemon" time="0.246"/>
+  <testcase name="obtener el nombre de una ubicacion dentro del juego" classname="Obtener los datos de una ubicación de los juegos de pokemon" time="0.409"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

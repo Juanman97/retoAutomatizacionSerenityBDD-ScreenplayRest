@@ -1,7 +1,5 @@
 package co.com.sofka.model.pokeapi.ingamelocations;
 
-import co.com.sofka.model.pokeapi.gameversion.Name;
-
 import java.util.List;
 
 public class LocationModel {

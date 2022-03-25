@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Obtener un post por su id" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-25T16:33:24" hostname="JUANMAN-PC" time="3.698">
-  <properties/>
-  <testcase name="obtener la informacion de un post por su id" classname="Obtener un post por su id" time="3.698"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

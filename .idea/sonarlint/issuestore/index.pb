@@ -19,11 +19,3 @@ v
 Fsrc/main/java/co/com/sofka/model/pokeapi/gameversion/VersionGroup.java,0\7\07967e3c414b21da77becc674bd3b2499cc3ccce
 z
 Jsrc/main/java/co/com/sofka/model/pokeapi/gameversion/GameVersionModel.java,3\8\38fbddca9ef82320b80a8d3faef5b494185e3eec
-Œ
-\src/test/java/co/com/sofka/stepdefinition/jsonplaceholder/UpdatePostTitleStepDefinition.java,8\a\8aba26b6f87a605f44196693b55fcea5803018cb
-‡
-Wsrc/test/java/co/com/sofka/stepdefinition/pokeapi/PokemonGameVersionStepDefinition.java,0\6\06c143b5a632e9a239eab7d6eeeac8ef6569c7c5
-z
-Jsrc/test/java/co/com/sofka/runner/jsonplaceholder/UpdatePostTitleTest.java,b\f\bfcd37e049701eeb222178f98c08d4b590330237
-o
-?src/main/java/co/com/sofka/task/jsonplaceholder/PatchTitle.java,e\4\e43580604f9cffd56aa3f47408872c42f74c1df0

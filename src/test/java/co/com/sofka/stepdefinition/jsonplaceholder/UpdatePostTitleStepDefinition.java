@@ -1,5 +1,6 @@
 package co.com.sofka.stepdefinition.jsonplaceholder;
 
+import co.com.sofka.model.jsonplaceholder.PatchTitleModel;
 import co.com.sofka.question.jsonplaceholder.GetPostData;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,12 +12,10 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import static co.com.sofka.question.jsonplaceholder.ResponseCode.responseCode;
-import static co.com.sofka.question.jsonplaceholder.ResponseToString.responseToString;
 import static co.com.sofka.task.jsonplaceholder.PatchTitle.patchTitle;
 import static co.com.sofka.util.FileUtilities.updateTitleBodyConverter;
 import static co.com.sofka.util.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class UpdatePostTitleStepDefinition {
@@ -24,8 +23,8 @@ public class UpdatePostTitleStepDefinition {
 
     private static final String URL_BASE = "https://jsonplaceholder.typicode.com/";
     private static final String RESOURCE = "posts/%s";
-    private static String BODY_REQUEST;
     private String NEW_TITLE_ASSERTION;
+    PatchTitleModel patchTitleModel;
 
     private final Actor actor = Actor.named("Juanman");
 
@@ -33,16 +32,18 @@ public class UpdatePostTitleStepDefinition {
     public void elUsuarioEstaEnElRecursoWebIndicandoElNuevoTitulo(String newTitle) {
         PropertyConfigurator.configure(System.getProperty("user.dir") + LOG4J_PROPERTIES_FILE_PATH.getValue());
         actor.whoCan(CallAnApi.at(URL_BASE));
-        BODY_REQUEST = updateTitleBodyConverter(newTitle);
         NEW_TITLE_ASSERTION = newTitle;
+
+        patchTitleModel = new PatchTitleModel();
+        patchTitleModel.setTitle(newTitle);
     }
 
     @When("El usuario actualiza el titulo del post con id {int}")
     public void elUsuarioActualizaElTituloDelPostConId(Integer id) {
         actor.attemptsTo(
                 patchTitle()
-                        .usingResource(RESOURCE)
-                        .withBody(BODY_REQUEST)
+                        .usingResource(String.format(RESOURCE, id))
+                        .withBody(patchTitleModel)
         );
     }
 

@@ -1,5 +1,6 @@
 package co.com.sofka.task.jsonplaceholder;
 
+import co.com.sofka.model.jsonplaceholder.PatchTitleModel;
 import io.restassured.http.ContentType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -8,14 +9,20 @@ import net.serenitybdd.screenplay.rest.interactions.Patch;
 public class PatchTitle implements Task {
     private String resource;
     private String bodyRequest;
+    private PatchTitleModel patchTitleModel;
 
     public PatchTitle usingResource(String resource) {
         this.resource = resource;
         return this;
     }
 
-    public PatchTitle withBody(String bodyRequest) {
-        this.bodyRequest = bodyRequest;
+//    public PatchTitle withBody(String bodyRequest) {
+//        this.bodyRequest = bodyRequest;
+//        return this;
+//    }
+
+    public PatchTitle withBody(PatchTitleModel patchTitleModel) {
+        this.patchTitleModel = patchTitleModel;
         return this;
     }
 
@@ -26,7 +33,7 @@ public class PatchTitle implements Task {
                         .with(
                                 requestSpecification -> requestSpecification.relaxedHTTPSValidation()
                                         .contentType(ContentType.JSON)
-                                        .body(bodyRequest)
+                                        .body(patchTitleModel)
                         )
         );
     }

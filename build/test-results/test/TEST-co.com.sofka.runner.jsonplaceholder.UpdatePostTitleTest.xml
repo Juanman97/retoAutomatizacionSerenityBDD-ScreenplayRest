@@ -4,12 +4,9 @@
   <system-out><![CDATA[
 1 Scenarios (?[32m1 passed?[0m)
 3 Steps (?[32m3 passed?[0m)
-0m3,702s
+0m0,721s
 
 
 ]]></system-out>
-  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

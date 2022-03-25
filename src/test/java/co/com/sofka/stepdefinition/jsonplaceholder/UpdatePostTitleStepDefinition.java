@@ -1,11 +1,11 @@
 package co.com.sofka.stepdefinition.jsonplaceholder;
 
+import co.com.sofka.question.jsonplaceholder.GetPostData;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
-import net.serenitybdd.screenplay.rest.questions.LastResponse;
 import org.apache.http.HttpStatus;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -20,7 +20,7 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class UpdatePostTitleStepDefinition {
-    private static final Logger LOGGER = Logger.getLogger(UserAlbumsStepDefinition.class);
+    private static final Logger LOGGER = Logger.getLogger(GetPostTitleStepDefinition.class);
 
     private static final String URL_BASE = "https://jsonplaceholder.typicode.com/";
     private static final String RESOURCE = "posts/%s";
@@ -34,7 +34,7 @@ public class UpdatePostTitleStepDefinition {
         PropertyConfigurator.configure(System.getProperty("user.dir") + LOG4J_PROPERTIES_FILE_PATH.getValue());
         actor.whoCan(CallAnApi.at(URL_BASE));
         BODY_REQUEST = updateTitleBodyConverter(newTitle);
-        NEW_TITLE_ASSERTION = String.format("\"title\": \"%s\"", newTitle);
+        NEW_TITLE_ASSERTION = newTitle;
     }
 
     @When("El usuario actualiza el titulo del post con id {int}")
@@ -48,9 +48,10 @@ public class UpdatePostTitleStepDefinition {
 
     @Then("El sistema mostrara el post con el titulo actualizado")
     public void elSistemaMostraraElPostConElTituloActualizado() {
+        String responsePostNewTitle = new GetPostData().answeredBy(actor).getTitle();
         actor.should(
                 seeThat("El código de respuesta", responseCode(), equalTo(HttpStatus.SC_OK)),
-                seeThat("El título del post es", responseToString(), containsString(NEW_TITLE_ASSERTION))
+                seeThat("El título del post es", act -> responsePostNewTitle, equalTo(NEW_TITLE_ASSERTION))
         );
     }
 }

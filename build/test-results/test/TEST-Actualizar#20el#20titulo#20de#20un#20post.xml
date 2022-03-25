@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Actualizar el titulo de un post" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-24T00:04:34" hostname="JUANMAN-PC" time="3.503">
+<testsuite name="Actualizar el titulo de un post" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-25T02:07:04" hostname="JUANMAN-PC" time="0.718">
   <properties/>
-  <testcase name="Modificar el titulo de un post" classname="Actualizar el titulo de un post" time="3.503"/>
+  <testcase name="Modificar el titulo de un post" classname="Actualizar el titulo de un post" time="0.718"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
